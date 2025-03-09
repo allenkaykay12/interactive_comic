@@ -1,0 +1,211 @@
+body {
+  font-family: "Red Hat Display", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+.navbar {
+  background-color: #000000;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu-2 {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.nav-link:hover {
+  color: #f3071b;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  gap: 20px;
+}
+.hero img {
+  max-width: 50%;
+  height: auto;
+}
+.hero-content {
+  max-width: 50%;
+  text-align: left;
+  color: white;
+}
+
+.team-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px;
+  text-align: center;
+}
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
+}
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.team-member p,
+h2 {
+  color: white;
+  font-size: 20px;
+}
+.team-intro {
+  padding: 30px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+.story-container {
+  background-image: url("images/story_background.avif");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.slideshow-container {
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+  margin: 50px auto;
+  overflow: hidden;
+  border: 5px solid white;
+  border-radius: 10px;
+  background-color: black;
+  box-shadow: 0px 4px 10px rgba(243, 6, 6, 0.5);
+}
+
+.mySlides {
+  display: none;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.mySlides img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.5s ease;
+}
+
+.mySlides img:hover {
+  transform: scale(1.02);
+}
+
+.text-container {
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  margin-top: 10px;
+}
+
+.decision {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.decision button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.decision .give-up {
+  background-color: red;
+  color: white;
+}
+
+.decision .keep-going {
+  background-color: green;
+  color: white;
+}
+
+.decision button:hover {
+  opacity: 0.8;
+}
+
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: auto;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.3s;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  transform: translateY(-50%);
+}
+
+.next:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .slideshow-container {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .next {
+    font-size: 16px;
+    padding: 8px;
+  }
+}
