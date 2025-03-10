@@ -1,274 +1,326 @@
+/* Global styles for the body element */
 body {
-  font-family: "Red Hat Display", sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #ffffff;
+  font-family: "Red Hat Display", sans-serif; /* Sets the default font for the entire page */
+  margin: 0; /* Resets default body margin */
+  padding: 0; /* Resets default body padding */
+  color: #ffffff; /* Sets default text color to white */
 }
 
+/* Styles for the navigation bar */
 .navbar {
-  background-color: #000000;
-  padding: 15px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #000000; /* Sets background color to black */
+  padding: 15px; /* Adds padding around the navbar content */
+  text-align: center; /* Centers text within the navbar (might be overridden by flex) */
+  display: flex; /* Enables flexbox layout for the navbar */
+  justify-content: center; /* Centers navbar content horizontally */
+  align-items: center; /* Centers navbar content vertically */
 }
 
+/* Styles for the navigation menu (ul or div containing nav links) */
 .nav-menu-2 {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
+  display: flex; /* Enables flexbox layout for the nav menu */
+  justify-content: center; /* Centers nav menu items horizontally */
+  gap: 2rem; /* Adds space between nav menu items */
 }
+/* Styles for individual navigation links */
 .nav-link {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 15px;
-  font-weight: bold;
-  font-size: 18px;
+  color: #fff; /* Sets link text color to white */
+  text-decoration: none; /* Removes underlines from links */
+  padding: 10px 15px; /* Adds padding around each link */
+  font-weight: bold; /* Makes link text bold */
+  font-size: 18px; /* Sets link font size */
 }
+/* Hover effect for navigation links */
 .nav-link:hover {
-  color: #f3071b;
+  color: #f3071b; /* Changes link color to red on hover */
 }
 
+/* Styles for the hero section (main landing area) */
 .hero {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 50px;
-  gap: 50px;
+  display: flex; /* Enables flexbox layout for the hero section */
+  flex-direction: row; /* Arranges hero content in a row (image and text side by side) */
+  align-items: center; /* Vertically aligns items in the hero section */
+  justify-content: center; /* Horizontally centers items in the hero section */
+  padding: 50px; /* Adds padding around the hero section */
+  gap: 50px; /* Adds space between hero image and content */
 }
+/* Styles for images within the hero section */
 .hero img {
-  max-width: 50%;
-  height: auto;
-  border-radius: 10px;
+  max-width: 50%; /* Makes image responsive, not exceeding 50% of its container width */
+  height: auto; /* Maintains image aspect ratio */
+  border-radius: 10px; /* Rounds the corners of hero images */
 }
+/* Styles for the text content within the hero section */
 .hero-content {
-  max-width: 50%;
-  text-align: left;
-  color: white;
+  max-width: 50%; /* Limits the width of the hero text content */
+  text-align: left; /* Aligns text to the left */
+  color: white; /* Sets text color to white */
 }
 
+/* Styles for the team section */
 .team-section {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  padding: 50px;
-  text-align: center;
+  display: flex; /* Enables flexbox layout for the team section */
+  justify-content: center; /* Centers team members horizontally */
+  gap: 40px; /* Adds space between team members */
+  padding: 50px; /* Adds padding around the team section */
+  text-align: center; /* Centers text within team members */
 }
+/* Styles for individual team member containers */
 .team-member {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 200px;
+  display: flex; /* Enables flexbox layout for team member container */
+  flex-direction: column; /* Arranges team member content vertically (image above text) */
+  align-items: center; /* Centers items within each team member container */
+  max-width: 200px; /* Sets a maximum width for each team member container */
 }
+/* Styles for team member images */
 .team-member img {
-  width: 150px;
-  height: 150px;
-  border-radius: 100%;
-  object-fit: cover;
-  margin-bottom: 10px;
+  width: 150px; /* Sets width of team member images */
+  height: 150px; /* Sets height of team member images */
+  border-radius: 100%; /* Makes images circular */
+  object-fit: cover; /* Ensures images cover the circular area without distortion */
+  margin-bottom: 10px; /* Adds space below team member images */
 }
+/* Styles for paragraphs and h2 elements within team member containers */
 .team-member p,
 h2 {
-  color: white;
-  font-size: 20px;
+  color: white; /* Sets text color to white */
+  font-size: 20px; /* Sets font size for team member names and descriptions */
 }
+/* Styles for the introductory text in the team section */
 .team-intro {
-  padding: 30px;
-  text-align: center;
-  color: white;
-  font-size: 20px;
+  padding: 30px; /* Adds padding around the team intro text */
+  text-align: center; /* Centers the team intro text */
+  color: white; /* Sets text color to white */
+  font-size: 20px; /* Sets font size for team intro text */
 }
 
+/* Styles for the story container (background image for story page) */
 .story-container {
-  background-image: url("images/story_background.avif");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 20px;
-  box-sizing: border-box;
+  background-image: url("images/story_background.avif"); /* Sets background image for story container */
+  background-size: cover; /* Scales background image to cover the entire container */
+  background-position: center; /* Centers the background image */
+  display: flex; /* Enables flexbox layout for story container */
+  justify-content: center; /* Centers content horizontally within story container */
+  align-items: center; /* Centers content vertically within story container */
+  min-height: 100vh; /* Sets minimum height to viewport height, ensuring full screen background */
+  padding: 20px; /* Adds padding around story container content */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
 }
 
+/* Styles for the slideshow container (comic panels) */
 .slideshow-container {
-  width: 90%;
-  max-width: 600px;
-  position: relative;
-  margin: 50px auto;
-  overflow: hidden;
-  border: 5px solid white;
-  border-radius: 10px;
-  background-color: black;
-  box-shadow: 0px 4px 10px rgba(243, 6, 6, 0.5);
+  width: 90%; /* Sets width to 90% of its parent */
+  max-width: 600px; /* Sets maximum width for the slideshow container */
+  position: relative; /* Establishes positioning context for inner elements (next button) */
+  margin: 50px auto; /* Adds top/bottom margin and centers horizontally */
+  overflow: hidden; /* Hides content that overflows the container (for slideshow effect) */
+  border: 5px solid white; /* Adds a white border around the slideshow */
+  border-radius: 10px; /* Rounds the corners of the slideshow container */
+  background-color: black; /* Sets background color to black */
+  box-shadow: 0px 4px 10px rgba(243, 6, 6, 0.5); /* Adds a red-tinted shadow for visual effect */
 }
 
+/* Styles for individual slides within the slideshow */
 .mySlides {
-  display: none;
-  text-align: center;
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  position: relative;
-  padding-bottom: 50px;
+  display: none; /* Hides slides by default (JavaScript will control visibility) */
+  text-align: center; /* Centers text within slides */
+  width: 100%; /* Makes slides take full width of the container */
+  height: auto; /* Allows slide height to adjust to content */
+  overflow: hidden; /* Hides overflowing content */
+  position: relative; /* Positioning context for text container within slides */
+  padding-bottom: 50px; /* Adds padding at the bottom of slides, likely for text container space */
 }
 
+/* Styles for images within slides */
 .mySlides img {
-  width: 100%;
-  max-height: 350px;
-  object-fit: cover;
-  border-radius: 8px;
-  transition: transform 0.5s ease;
+  width: 100%; /* Makes images take full width of the slide */
+  max-height: 350px; /* Sets maximum height for slide images */
+  object-fit: cover; /* Ensures images cover the area without distortion */
+  border-radius: 8px; /* Rounds corners of slide images */
+  transition: transform 0.5s ease; /* Smooth transition for hover effect */
 }
 
+/* Hover effect for slide images */
 .mySlides img:hover {
-  transform: scale(1.02);
+  transform: scale(1.02); /* Slightly zooms in image on hover */
 }
 
+/* Styles for the text container below each slide image */
 .text-container {
-  padding: 10px 15px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  width: 100%;
-  text-align: center;
-  position: relative;
-  margin-top: 10px;
+  padding: 10px 15px; /* Adds padding to the text container */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Semi-transparent black background for text container */
+  color: white; /* Sets text color to white */
+  font-size: 18px; /* Sets font size for slide text */
+  font-weight: bold; /* Makes slide text bold */
+  width: 100%; /* Makes text container full width */
+  text-align: center; /* Centers text within the container */
+  position: relative; /* Positioning context within the slide */
+  margin-top: 10px; /* Adds space above the text container */
 }
 
+/* Styles for the decision button container (give up/keep going) */
 .decision {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 10px;
+  display: flex; /* Enables flexbox layout for decision buttons */
+  justify-content: center; /* Centers decision buttons horizontally */
+  gap: 10px; /* Adds space between decision buttons */
+  margin-top: 10px; /* Adds space above the decision buttons */
 }
 
+/* Styles for buttons within the decision container */
 .decision button {
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
+  padding: 10px 20px; /* Adds padding to decision buttons */
+  font-size: 16px; /* Sets font size for decision buttons */
+  border: none; /* Removes button borders */
+  border-radius: 5px; /* Rounds the corners of decision buttons */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  font-weight: bold; /* Makes button text bold */
 }
 
+/* Styles for the "Give Up" button */
 .decision .give-up {
-  background-color: red;
-  color: white;
+  background-color: red; /* Sets background color to red for "Give Up" button */
+  color: white; /* Sets text color to white for "Give Up" button */
 }
 
+/* Styles for the "Keep Going" button */
 .decision .keep-going {
-  background-color: green;
-  color: white;
+  background-color: green; /* Sets background color to green for "Keep Going" button */
+  color: white; /* Sets text color to white for "Keep Going" button */
 }
 
+/* Hover effect for decision buttons */
 .decision button:hover {
-  opacity: 0.8;
+  opacity: 0.8; /* Reduces opacity on hover for button effect */
 }
 
+/* Styles for the "Next" button in the slideshow */
 .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  width: auto;
-  padding: 10px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.3s;
-  border-radius: 5px;
-  background: rgba(0, 0, 0, 0.5);
-  border: none;
-  transform: translateY(-50%);
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  position: absolute; /* Positions the button relative to the slideshow container */
+  top: 50%; /* Vertically centers the button */
+  right: 10px; /* Positions the button 10px from the right edge */
+  width: auto; /* Allows button width to adjust to content */
+  padding: 10px; /* Adds padding to the button */
+  color: white; /* Sets text color to white */
+  font-weight: bold; /* Makes button text bold */
+  font-size: 20px; /* Sets font size for the button */
+  transition: 0.3s; /* Smooth transition for hover effect */
+  border-radius: 5px; /* Rounds the corners of the button */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Semi-transparent black background for the button */
+  border: none; /* Removes button border */
+  transform: translateY(-50%); /* Fine-tunes vertical centering */
 }
 
+/* Hover effect for the "Next" button */
 .next:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* Changes background to semi-transparent white on hover */
 }
 
+/* Keyframe animation for a fade-in effect */
 @keyframes fadeEffect {
   from {
-    opacity: 0.6;
+    opacity: 0.6; /* Starting opacity for fade effect */
   }
   to {
-    opacity: 1;
+    opacity: 1; /* Ending opacity for fade effect (fully visible) */
   }
 }
 
+/* Media query for screens with a maximum width of 768px (tablets/smaller screens) */
 @media only screen and (max-width: 768px) {
   .slideshow-container {
-    width: 100%;
-    max-width: 500px;
+    width: 100%; /* Makes slideshow container full width on smaller screens */
+    max-width: 500px; /* Reduces maximum width of slideshow container on smaller screens */
   }
 
   .next {
-    font-size: 16px;
-    padding: 8px;
+    font-size: 16px; /* Reduces font size of "Next" button on smaller screens */
+    padding: 8px; /* Reduces padding of "Next" button on smaller screens */
   }
 }
 
+/* Styles for the contact container */
 .contact-container {
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 20px;
-  background: #000;
-  color: white;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-  text-align: center;
+  max-width: 600px; /* Sets maximum width for the contact form container */
+  margin: 50px auto; /* Centers the contact form container horizontally with top/bottom margin */
+  padding: 20px; /* Adds padding around the contact form content */
+  background: #000; /* Sets background color to black */
+  color: white; /* Sets text color to white */
+  border-radius: 8px; /* Rounds the corners of the contact form container */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Adds a subtle white shadow */
+  text-align: center; /* Centers text within the contact form container */
 }
 
+/* Styles for h2 headings (used in contact form) */
 h2 {
-  color: #f3071b;
+  color: #f3071b; /* Sets heading color to red */
 }
 
+/* Styles for paragraph elements (used in contact form) */
 p {
-  font-size: 16px;
-  margin-bottom: 20px;
+  font-size: 16px; /* Sets font size for paragraphs */
+  margin-bottom: 20px; /* Adds bottom margin to paragraphs */
 }
 
+/* Styles for the form element */
 form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+  display: flex; /* Enables flexbox layout for the form */
+  flex-direction: column; /* Arranges form elements in a column */
+  gap: 15px; /* Adds space between form elements */
 }
 
+/* Styles for form labels */
 label {
-  font-weight: bold;
-  text-align: left;
+  font-weight: bold; /* Makes labels bold */
+  text-align: left; /* Aligns label text to the left */
 }
 
+/* Styles for input, select, and textarea form elements */
 input,
 select,
 textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #1f1c1c;
-  border-radius: 5px;
-  background: black;
-  color: white;
+  width: 100%; /* Makes form inputs full width of their container */
+  padding: 10px; /* Adds padding inside form inputs */
+  border: 1px solid #1f1c1c; /* Adds a dark gray border to form inputs */
+  border-radius: 5px; /* Rounds the corners of form inputs */
+  background: black; /* Sets background color to black */
+  color: white; /* Sets text color to white */
 }
 
+/* Styles for the radio button group in the form */
 .radio-group {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+  display: flex; /* Enables flexbox layout for radio buttons */
+  justify-content: center; /* Centers radio buttons horizontally */
+  gap: 20px; /* Adds space between radio buttons */
 }
 
+/* Styles for buttons within the form (submit button) */
 button {
-  background: #f3071b;
-  color: white;
-  border: none;
-  padding: 10px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
+  background: #f3071b; /* Sets button background color to red */
+  color: white; /* Sets button text color to white */
+  border: none; /* Removes button border */
+  padding: 10px; /* Adds padding to buttons */
+  font-size: 16px; /* Sets font size for buttons */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  border-radius: 5px; /* Rounds the corners of buttons */
 }
 
+/* Hover effect for form buttons */
 button:hover {
-  background: #b90514;
+  background: #b90514; /* Darkens button background color on hover */
 }

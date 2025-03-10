@@ -2,25 +2,34 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <!-- Specifies character encoding for the document to UTF-8 -->
     <title>TREASURE HUNT</title>
+    <!-- Sets the title of the page that appears in the browser tab -->
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <!-- Configures the viewport for responsive design -->
+    <!-- Links to the main CSS file from Webflow, handling base styles and layout -->
     <link
       href="https://assets-global.website-files.com/63371693759d506ebbb61b7e/css/takeoverworld.webflow.8ec5a9766.css"
       rel="stylesheet"
       type="text/css"
     />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <!-- Preconnects to Google Fonts for faster font loading -->
     <link
       href="https://fonts.gstatic.com"
       rel="preconnect"
       crossorigin="anonymous"
     />
+    <!-- Preconnects to Google Fonts static content for optimization -->
+    <!-- Links to Google Fonts stylesheet for specific font families used on the site -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:regular,italic,500italic,700%7CRed+Hat+Display:regular,500,600,700,800"
       media="all"
     />
     <link rel="stylesheet" href="style.css" />
+    <!-- Links to a local stylesheet 'style.css' for custom page-specific styling -->
+    <!-- Klaviyo scripts for tracking and analytics (likely for marketing and user behavior analysis) -->
     <script
       type="text/javascript"
       async=""
@@ -41,6 +50,8 @@
     ></script>
   </head>
   <body class="body">
+    <!-- Body element with class 'body' for global CSS styling -->
+    <!-- Navigation bar using Webflow's navbar component -->
     <div
       data-animation="default"
       data-collapse="medium"
@@ -51,14 +62,22 @@
       class="navbar w-nav"
     >
       <div class="container-2 w-container">
+        <!-- Container for navbar content, likely for responsive layout -->
         <div class="nav-bar-flex-wrapper">
+          <!-- Wrapper for flexible arrangement of navbar elements -->
           <nav role="navigation" class="nav-menu-2 w-nav-menu">
+            <!-- Navigation menu -->
             <a href="about.html" class="nav-link w-nav-link">ABOUT</a>
+            <!-- Nav link to About page -->
             <a href="index.html" class="nav-link w-nav-link">COMIC</a>
+            <!-- Nav link to Comic page -->
             <a href="team.html" class="nav-link w-nav-link">TEAM</a>
+            <!-- Nav link to Team page -->
             <a href="contact.html" class="nav-link w-nav-link">CONTACT</a>
+            <!-- Nav link to Contact page (current page) -->
           </nav>
         </div>
+        <!-- Hamburger menu button for mobile navigation -->
         <div
           class="menu-button-2 w-nav-button"
           aria-label="menu"
@@ -73,95 +92,142 @@
             data-w-id="dad0613e-1f56-af62-4992-bea6a04d8ea4"
             class="hamburger-wrapper w-inline-block"
           >
+            <!-- Hamburger icon wrapper -->
             <div
               data-w-id="dad0613e-1f56-af62-4992-bea6a04d8ea5"
               class="burger-line"
             ></div>
+            <!-- Top line of hamburger icon -->
             <div
               data-w-id="dad0613e-1f56-af62-4992-bea6a04d8ea6"
               class="burger-line"
             ></div>
+            <!-- Middle line of hamburger icon -->
             <div
               data-w-id="dad0613e-1f56-af62-4992-bea6a04d8ea7"
               class="burger-line"
             ></div>
+            <!-- Bottom line of hamburger icon -->
           </a>
         </div>
       </div>
     </div>
 
+    <!-- Main content container for the contact form -->
     <div class="contact-container">
       <h2>Share Your Feedback</h2>
+      <!-- Heading for the contact section -->
       <p>We would love to hear your thoughts on the comic!</p>
+      <!-- Sub-heading or introductory text -->
 
+      <!-- Contact form starts here -->
       <form
         action="mailto:allenkayesu10@gmail.com"
-        method="POST"
-        enctype="text/plain"
-        onsubmit="setTimeout(() => { window.location.href = 'contact.html'; }, 1000)"
-        class="container"
+        <!--
+        Form
+        submission
+        directly
+        to
+        email
+        address
+        --
       >
+        method="POST"
+        <!-- Specifies HTTP method for form submission -->
+        enctype="text/plain"
+        <!-- Encoding type for email body, plain text format -->
+        onsubmit="setTimeout(() => { window.location.href = 'contact.html'; },
+        1000)"
+        <!-- Redirects back to contact page after 1 second on submit -->
+        class="container"
+        <!-- Class 'container' likely for layout and styling -->
+        >
         <label for="name">Name:</label>
+        <!-- Label for the name input field -->
         <input
           type="text"
           id="name"
           name="name"
           placeholder="Enter your name"
         />
+        <!-- Text input for name -->
 
         <label for="email">Email:</label>
+        <!-- Label for the email input field -->
         <input
           type="email"
           id="email"
           name="email"
           placeholder="Enter your email"
         />
+        <!-- Email input for user's email address -->
 
         <label for="rating">Rate the Comic:</label>
+        <!-- Label for the rating dropdown -->
         <select id="rating" name="rating">
+          <!-- Dropdown select for rating the comic -->
           <option value="" disabled selected>Choose from below</option>
+          <!-- Default disabled option -->
           <option value="5">⭐️⭐️⭐️⭐️⭐️ - Amazing!</option>
+          <!-- Option for 5-star rating -->
           <option value="4">⭐️⭐️⭐️⭐️ - Great!</option>
+          <!-- Option for 4-star rating -->
           <option value="3">⭐️⭐️⭐️ - Good</option>
+          <!-- Option for 3-star rating -->
           <option value="2">⭐️⭐️ - Okay</option>
+          <!-- Option for 2-star rating -->
           <option value="1">⭐️ - Needs Improvement</option>
+          <!-- Option for 1-star rating -->
         </select>
 
         <label for="likes">What do you like most?</label>
+        <!-- Label for the textarea for likes -->
         <textarea
           id="likes"
           name="likes"
           rows="3"
           placeholder="Tell us what you loved!"
         ></textarea>
+        <!-- Textarea for user to describe what they liked -->
 
         <label for="suggestions">Any suggestions?</label>
+        <!-- Label for the suggestions textarea -->
         <textarea
           id="suggestions"
           name="suggestions"
           rows="3"
           placeholder="Share your ideas!"
         ></textarea>
+        <!-- Textarea for user to provide suggestions -->
 
         <label>Would you recommend this comic?</label>
+        <!-- Label for the recommendation radio buttons -->
         <div class="radio-group">
+          <!-- Container for radio buttons, styled for horizontal layout -->
           <input type="radio" id="recommend-yes" name="recommend" value="Yes" />
+          <!-- Radio button for 'Yes' recommendation -->
           <label for="recommend-yes">Yes</label>
+          <!-- Label associated with 'Yes' radio button -->
 
           <input type="radio" id="recommend-no" name="recommend" value="No" />
+          <!-- Radio button for 'No' recommendation -->
           <label for="recommend-no">No</label>
+          <!-- Label associated with 'No' radio button -->
         </div>
 
         <button type="submit">Submit Feedback</button>
+        <!-- Submit button for the form -->
       </form>
     </div>
 
+    <!-- jQuery library - required for Webflow and potentially other scripts -->
     <script
       src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=63371693759d506ebbb61b7e"
       type="text/javascript"
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
+    <!-- Webflow's JavaScript file for handling interactions and dynamic page elements -->
     <script
       src="https://assets-global.website-files.com/63371693759d506ebbb61b7e/js/webflow.c6d6ab5f2.js"
       type="text/javascript"
