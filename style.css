@@ -36,11 +36,12 @@ body {
   align-items: center;
   justify-content: center;
   padding: 50px;
-  gap: 20px;
+  gap: 50px;
 }
 .hero img {
   max-width: 50%;
   height: auto;
+  border-radius: 10px;
 }
 .hero-content {
   max-width: 50%;
